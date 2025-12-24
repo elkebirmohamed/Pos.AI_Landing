@@ -32,11 +32,17 @@ const Download: React.FC<DownloadProps> = ({ t }) => {
             </div>
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t.winTitle}</h3>
             <p className="text-slate-500 dark:text-slate-400 mb-8">{t.winSub}</p>
-            <Button variant="primary" fullWidth size="lg">
-              {t.winBtn}
-            </Button>
-            <p className="mt-4 text-xs text-slate-400">.exe installer • 145 MB</p>
-          </div>
+            
+          <a 
+            href="https://github.com/elkebirmohamed/smart-pos-application/releases/download/v1.0.0/Smart.POS.Assistant_0.1.0_x64_en-US.msi" 
+            download
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all flex items-center justify-center shadow-lg hover:shadow-blue-500/20 text-center"
+          >
+            {t.winBtn}
+          </a>
+                 
+            <p className="mt-4 text-xs text-slate-400">.msi installer • ~10 MB</p>
+          </div>*
 
           {/* MacOS Card */}
           <div className="bg-slate-50 dark:bg-slate-900 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 hover:border-brand-300 dark:hover:border-brand-500 hover:shadow-lg transition-all flex flex-col items-center text-center">
