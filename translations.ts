@@ -74,7 +74,7 @@ export const translations = {
     download: {
       badge: "Dernière version : v1.0.4",
       title: "Commencez votre essai gratuit",
-      desc1: "Téléchargez POS.AI et testez toutes les fonctionnalités IA pendant 30 jours.",
+      desc1: "Téléchargez POS.AI et testez toutes les fonctionnalités IA pendant 10 jours.",
       desc2: "Aucune carte bancaire requise pour le téléchargement.",
       winTitle: "Windows",
       winSub: "Windows 10 et 11 (64-bit)",
@@ -118,7 +118,7 @@ export const translations = {
       desc: "Un modèle simple et transparent. Investissez dans votre outil de travail une seule fois.",
       processTitle: "Comment activer votre licence POS.AI ?",
       step1Title: "Téléchargez & Testez",
-      step1Desc: "Profitez de 30 jours gratuits sans restriction avec les modules IA activés.",
+      step1Desc: "Profitez de 10 jours gratuits sans restriction avec les modules IA activés.",
       step2Title: "Obtenez votre ID Machine",
       step2Desc: "Dans l'application POS.AI, allez dans Paramètres > Licence. Copiez votre identifiant unique (Machine ID).",
       step3Title: "Achetez la Clé d'Activation",
