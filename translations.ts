@@ -292,7 +292,7 @@ export const translations = {
       step3Desc: "One-time payment. You instantly receive a perpetual unlock key for this machine.",
       offerBadge: "V1 Launch Offer",
       offerTitle: "POS.AI Perpetual Licence",
-      offerPrice: "59,90€",
+      offerPrice: "1,00€",
       offerUnit: "/ machine",
       offerSub: "One-time payment. Lifetime software.",
       list: [
