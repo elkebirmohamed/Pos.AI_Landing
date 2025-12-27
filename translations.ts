@@ -125,7 +125,7 @@ export const translations = {
       step3Desc: "Paiement unique. Vous recevez instantanément une clé de déverrouillage perpétuelle pour cette machine.",
       offerBadge: "Offre de Lancement V1",
       offerTitle: "Licence Perpétuelle POS.AI",
-      offerPrice: "59,90€",
+      offerPrice: "1,00€",
       offerUnit: "/ machine",
       offerSub: "Paiement unique. Logiciel à vie.",
       list: [

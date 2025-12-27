@@ -96,22 +96,23 @@ const Pricing: React.FC<PricingProps> = ({ t }) => {
 
             <div className="space-y-4">
   <Button 
-    variant="accent" 
-    fullWidth 
-    size="lg" 
-    onClick={() => {
-      // On extrait le prix du fichier translations (ex: "59,90€" -> "59.90")
-      // On remplace la virgule par un point pour que PayPal comprenne le chiffre
-      const priceRaw = t.offerPrice.replace('€', '').replace(',', '.').trim();
-      
-      const targetUrl = `https://activation-cl-pos.vercel.app?price=${priceRaw}`;
-      
-      window.open(targetUrl, '_blank', 'noopener,noreferrer');
-    }}
-  >
-    <CreditCard className="w-5 h-5 mr-2" />
-    {t.buyBtn}
-  </Button>
+  variant="accent" 
+  fullWidth 
+  size="lg" 
+  onClick={() => {
+    // 1. On nettoie le prix du fichier translations.ts (ex: "1,00€" -> "1.00")
+    const priceValue = t.offerPrice.replace('€', '').replace(',', '.').trim();
+    
+    // 2. On construit l'URL avec le paramètre ?price=
+    const targetUrl = `https://activation-cl-pos.vercel.app?price=${priceValue}`;
+    
+    // 3. On ouvre
+    window.open(targetUrl, '_blank', 'noopener,noreferrer');
+  }}
+>
+  <CreditCard className="w-5 h-5 mr-2" />
+  {t.buyBtn}
+</Button>
   <p className="text-xs text-center text-slate-400">
     {t.footer}
   </p>
